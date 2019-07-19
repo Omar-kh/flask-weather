@@ -1,6 +1,6 @@
 FROM python:3.7.3
 
-COPY ./* /flask-app/
+COPY * /flask-app/
 
 WORKDIR /flask-app
 
