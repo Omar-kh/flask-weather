@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
 import requests as py_request
 app = Flask(__name__)
 
@@ -12,7 +12,7 @@ def index():
     # lat = r.json().get('latitude', 'Not found')
     # lon = r.json().get('longitude', 'Not found')
     # print(lat, lon)
-    return user_headers
+    return jsonify(user_headers)
 
 
 if __name__ == "__main__":
