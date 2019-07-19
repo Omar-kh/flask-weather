@@ -26,7 +26,12 @@
       <small>longitude: {{ longitude }}</small>
     </h2>
     <form action="" , method="POST">
-      {{ form.city }}<br />{{ form.submit }}
+      <div class="input-field">
+        {{ form.city }}
+      </div>
+      <div class="input-field">
+        {{ form.submit }}
+      </div>
     </form>
   </body>
 </html>
