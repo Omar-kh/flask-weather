@@ -12,7 +12,8 @@ def index():
     # lat = r.json().get('latitude', 'Not found')
     # lon = r.json().get('longitude', 'Not found')
     # print(lat, lon)
-    return jsonify(user_headers)
+    print(user_headers)
+    return "check your logs"
 
 
 if __name__ == "__main__":
