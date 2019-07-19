@@ -12,7 +12,7 @@ def index():
     # lat = r.json().get('latitude', 'Not found')
     # lon = r.json().get('longitude', 'Not found')
     # print(lat, lon)
-    print(user_headers)
+    print(user_headers["X-Forwarded-For"])
     return "check your logs"
 
 
