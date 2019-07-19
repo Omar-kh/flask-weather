@@ -16,7 +16,7 @@ def index():
         f"https://api.darksky.net/forecast/0b1f03d065f776f4082cbaebe7f4b653/{lat},{lon}"
     )
     weather_info = r2.json()["currently"]["summary"]
-    return render_template("index.html", user_ip=user_ip, city=city, weather=weather_info)
+    return render_template("index.html", user_ip=user_ip, city=city, weather=weather_info, latitude=lat, longitude=lon)
 
 
 if __name__ == "__main__":
